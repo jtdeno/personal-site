@@ -1,0 +1,203 @@
+/*****************************************
+--------STICKY FOOTER STUFF---------------
+*****************************************/
+html, body { height: 100%; font-size: 18px; }
+
+/*Opera Fix*/
+body:before {
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+footer {
+    position: relative;
+    margin: -50px auto 0;
+	height: 49px;
+    width: 960px;
+    border-top: 1px solid #000;
+	clear: both;
+}
+
+    footer p {
+        line-height: 49px;
+        padding-left: 10px;
+    }
+
+/*****************************************
+----------STANDARD ELEMENTS---------------
+*****************************************/
+h2 { font-size: 30px; }
+h3 { font-size: 26px; }
+a { text-decoration: none; }
+
+label {
+    padding: 5px 0;
+}
+
+input[type=submit] {
+    margin: 5px 0;
+}
+
+input {
+	float: left;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.required-error {
+	border: 1px solid red;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: .85em;
+    color: #666;
+}
+
+.noise {
+    background: url('img/noise-pattern.png');
+}
+
+.system_error {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.hidden {
+	display: none;
+}
+
+.red { color: #E83A25; }
+.yellow { color: #FFE9A3; }
+.blue { color: #004563; }
+.green { color: #98CC96; }
+
+/*****************************************
+-----------------HEADER-------------------
+*****************************************/
+#header-container {
+    background: url('img/header-bg.png') repeat-x;
+    box-shadow: 0 15px 10px #888;
+}
+
+header {
+    height: 100px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+    header h1 {
+        float: left;
+        padding: 0 0 0 10px;
+        font-size: 48px;
+        line-height: 100px;
+    }
+        header h1 a {
+            color: #FFF;
+            text-decoration: none;
+            text-shadow: 3px 3px 3px #2F556F;
+        }
+        header h1 .small {
+            font-size: 30px;
+        }
+
+noscript div {
+	background: #FF0000;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+}
+/*****************************************
+-------------TOP NAVIGATION---------------
+*****************************************/
+#navigation {
+    float: right;
+    font-size: 20px;
+}
+    #navigation a {
+        color: #FFF;
+        line-height: 100px;
+    }
+
+#navigation-bar-container {
+    background: url('img/nav-bar-bg.png');
+    box-shadow: 0 10px 15px #888;
+}
+#navigation-bar {
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+}
+    #navigation-bar ul {
+        padding-top: 9px;
+    }
+    #navigation-bar li {
+        height: 17px;
+        float: left;
+        padding: 8px;
+        margin-left: 10px;
+        border-radius: 5px;
+        line-height: 17px;
+    }
+        #navigation-bar li:first-child {
+            margin-left: 5px;
+        }
+        #navigation-bar li:hover {
+            background: url('img/noise-pattern.png') #E36C00;
+        }
+    #navigation-bar a {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+#home #home-link, #blog #blog-link, #contact #contact-link {
+    background: url('img/noise-pattern.png') #DC6A03;
+}
+
+/*****************************************
+--------------CONTENT AREA----------------
+*****************************************/
+#container {
+    min-height: 100%;
+    margin: 0 auto;
+    background: url('img/body-bg.png') #E4E4E4 repeat;
+}
+
+#main {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 20px 10px 50px; /* bottom padding must be same height as the footer */
+}
+    #main p {
+        padding: 5px 0;
+    }
+
+#content {
+    float: left;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: url('img/white-transparent.png');
+}
