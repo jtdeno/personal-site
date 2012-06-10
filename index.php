@@ -10,6 +10,7 @@ load_template('header', $template_data);
 
 <div id="main">
     <div id="content">
+		<p> Test </p>
         <p> This page isn't pretty. This page isn't fancy. This page isn't eye-catching. This page works. </p>
 
         <p>
